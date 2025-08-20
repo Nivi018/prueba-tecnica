@@ -8,7 +8,7 @@ export const PokemonModal = ({ pokemon, onClose }) => {
 
   return (
     <div className="modal show d-block" tabIndex="-1" role="dialog">
-      <div className="modal-dialog modal-dialog-centered modal-lg" role="document">
+      <div className="modal-dialog modal-dialog-centered modal-md" role="document">
         <div className="modal-content">
           {/* Header */}
           <div className="modal-header ">
@@ -53,7 +53,7 @@ export const PokemonModal = ({ pokemon, onClose }) => {
             {/* Contenido de las pestañas */}
             {activeTab === "info" && (
                 
-              <div className="text-center">
+              <div className="pokemon-info">
                 <p><strong>Altura:</strong> {pokemon.height / 10} m</p>
                 <p><strong>Peso:</strong> {pokemon.weight / 10} kg</p>
                 <p><strong>Habilidades:</strong> {pokemon.abilities.join(", ")}</p>

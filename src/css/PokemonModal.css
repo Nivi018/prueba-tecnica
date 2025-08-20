@@ -1,1 +1,14 @@
+.modal-content {
+    width: 40rem;
+    height: 45rem;
+}
 
+.modal-body{
+    flex: none;
+}
+
+.pokemon-info{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}

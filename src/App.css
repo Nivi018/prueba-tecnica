@@ -1,3 +1,11 @@
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
 .App {
   text-align: center;
 }
@@ -37,17 +45,18 @@
   }
 }
 
-.header{
-  display: flex;
+.main-content {
+  padding: 2rem;
+  max-width: 120rem;
+  margin: 0 auto;
 }
 
-.header__tittle{
-  background-color: #fff;
-  padding: 10px;
+.pokemon-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
 }
 
-.header__search{
-  background-color: #fff;
-  padding: 10px;
+.pokemon-card-wrapper {
+  cursor: pointer; /* para indicar que se puede hacer clic */
 }
-

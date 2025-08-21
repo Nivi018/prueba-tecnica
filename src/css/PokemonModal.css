@@ -7,8 +7,19 @@
     flex: none;
 }
 
+.modal-dialog{
+    width: 30rem;
+    /* max-width: var(width); */
+    margin-right: auto;
+    margin-left: auto;
+}
+
 .pokemon-info{
     display: flex;
     flex-direction: column;
     margin-top: 2rem;
+}
+
+.mb-2 span{
+    background-color: var(--bgColor) !important;
 }

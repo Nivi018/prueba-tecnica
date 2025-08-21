@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../css/PokemonModal.css";
+import {Oscuros}  from "../components/colors";
 
 export const PokemonModal = ({ pokemon, onClose }) => {
   const [activeTab, setActiveTab] = useState("info"); // info o stats
@@ -8,7 +9,7 @@ export const PokemonModal = ({ pokemon, onClose }) => {
 
   return (
     <div className="modal show d-block" tabIndex="-1" role="dialog">
-      <div className="modal-dialog modal-dialog-centered modal-md" role="document">
+      <div className="modal-dialog modal-dialog-centered modal-sm" role="document">
         <div className="modal-content">
           {/* Header */}
           <div className="modal-header ">
@@ -21,7 +22,8 @@ export const PokemonModal = ({ pokemon, onClose }) => {
             <img src={pokemon.image} alt={pokemon.name} />
             <div className="mb-2">
                   {pokemon.types.map((type, index) => (
-                    <span key={index} className="badge bg-primary mx-1 text-capitalize">
+                    <span key={index} className="badge mx-1 text-capitalize"
+                    style={{ "--bgColor": Oscuros[type] }}>
                       {type}
                     </span>
                   ))}

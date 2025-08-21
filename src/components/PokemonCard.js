@@ -26,7 +26,7 @@ export const PokemonCard = ({ name, image, types }) => {
       <div className="pokemon-card__imagen" style={{ backgroundImage: `url(${imagen})` }}>
         {/* <img className="card-logo" src={imagen} /> */}
 
-        <img src={image} alt={name} />
+        <img className="imagen-pokemon" src={image} alt={name} />
       </div>
     </div>
   );

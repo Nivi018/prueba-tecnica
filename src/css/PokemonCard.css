@@ -52,6 +52,11 @@
   background-position: center center;
 }
 
+.imagen-pokemon{
+  width: 12rem;
+  height: 12rem;
+}
+
 .pokemon-types {
   margin-top: 10px;
   display: grid;   
@@ -66,5 +71,6 @@
   font-size: 12px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
 
 

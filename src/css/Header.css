@@ -4,7 +4,7 @@
   display: flex;
   gap: 2rem;
   justify-content:center;
-  background-color: #f4f4f4;
+  /* background-color: #f4f4f4; */
   color: black;
 }
 
@@ -16,10 +16,14 @@
 
 .header input {
   padding: 1rem;
-  border-radius: 5px;
-  border: none;
+  /* border-radius: 5px;
+  border: none; */
   font-size: 1.5rem;
   width: 95%;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 1px solid black;
 }
 
 .imagen-logo {
@@ -33,7 +37,15 @@
   display: grid;
   gap: 2rem;
   align-items: center;
+  max-width: 120rem;
   width: 95%;
+  margin: auto;
+}
+
+.div__input {
+  width: 100%;
+  display: grid;
+  color: #808080;
 }
 
 @media (min-width: 460px) {

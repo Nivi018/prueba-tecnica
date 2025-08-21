@@ -5,23 +5,20 @@ import image from "../img/pokedex-main.png";
 export const Header = ({ search, setSearch }) => {
   return (
     <header className="header ">
-      <div className=" main-content div__header">
+      <div className=" div__header">
         {" "}
         <h1>Pokedex</h1>
-        <input
-          type="text"
-          placeholder="Buscar..."
-          value={search}
-          onChange={(e) => setSearch(e.target.value)}
-        />
-        
+        <div className=" div__input">
+          Pokemon Name
+          <input
+            type="text"
+            placeholder="Buscar..."
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
+          />
+        </div>
       </div>
-      <img
-          className="imagen-logo"
-          src={image}
-          title="pokedex"
-          alt="pokemon"
-        />
+      <img className="imagen-logo" src={image} title="pokedex" alt="pokemon" />
     </header>
   );
 };
